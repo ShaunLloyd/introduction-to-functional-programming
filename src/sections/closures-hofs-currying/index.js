@@ -42,7 +42,7 @@ export default fixit(
 
     <Slide>
       <Heading>Currying</Heading>
-        <Appear order={1}><Text>The process of reducing a function with multiple arguments down to one</Text></Appear>
+        <Appear order={1}><Text>The process of converting a function with multiple arguments to a series of higher order functions taking one argument at a time</Text></Appear>
     </Slide>
 
     <Slide>
@@ -51,6 +51,21 @@ export default fixit(
         lang="js"
         source={curryingExample}
       />
+    </Slide>
+
+    <Slide>
+      <Heading>Exercise 1</Heading>
+      <Text>Implement map or filter via recursion or reduce</Text>
+    </Slide>
+
+    <Slide>
+      <Heading>Exercise 2</Heading>
+      <Text>Implement reduce</Text>
+    </Slide>
+
+    <Slide>
+      <Heading>Exercise 3</Heading>
+      <Text>Implement auto-curry via tail-recursion</Text>
     </Slide>
   </React.Fragment>
 );
