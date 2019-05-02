@@ -3,11 +3,11 @@ class Adder {
   private b: number = 0;
   private sum: number = 0;
 
-  setX(x: number) {
-    this.a = x;
+  setA(a: number) {
+    this.a = a;
   }
-  setY(y: number) {
-    this.b = y;
+  setB(b: number) {
+    this.b = b;
   }
   add() {
     this.sum = this.a + this.b;

@@ -1,7 +1,7 @@
 const adder = new Adder();
 
-adder.setX(1);
-adder.setY(2);
+adder.setA(1);
+adder.setB(2);
 adder.add();
 
 moduleA.run(adder);

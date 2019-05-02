@@ -1,54 +1,40 @@
 // Import React
-import React from "react";
+import React from 'react';
 
 // Import Spectacle Core tags
-import { Deck } from "spectacle";
+import { Deck } from 'spectacle';
 
 // Import theme
-import createTheme from "spectacle/lib/themes/default";
+import createTheme from 'spectacle/lib/themes/default';
 
-import {
-  Intro,
-  Outro,
-  Statefulness,
-  FilterMapReduce,
-  Basics,
-  Closures,
-  CPSPromises,
-} from "./sections";
+import { Statefulness, Immutability, PureFunctions, Observables, Intro } from './sections';
 
 // Require CSS
-require("normalize.css");
+require('normalize.css');
 
 const theme = createTheme(
   {
-    primary: "white",
-    secondary: "#1F2022",
-    tertiary: "#03A9FC",
-    quartenary: "#CECECE"
+    primary: 'white',
+    secondary: '#1F2022',
+    tertiary: '#03A9FC',
+    quartenary: '#CECECE',
   },
   {
-    primary: "Montserrat",
-    secondary: "Helvetica"
-  }
+    primary: 'Montserrat',
+    secondary: 'Helvetica',
+  },
 );
-theme.screen.components.codePane.fontSize = "1.2em";
+theme.screen.components.codePane.fontSize = '1.2em';
 
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck
-        transition={["slide"]}
-        transitionDuration={333}
-        theme={theme}
-      >
+      <Deck transition={['slide']} transitionDuration={333} theme={theme}>
         {Intro}
         {Statefulness}
-        {Basics}
-        {FilterMapReduce}
-        {Closures}
-        {CPSPromises}
-        {Outro}
+        {Immutability}
+        {PureFunctions}
+        {Observables}
       </Deck>
     );
   }
